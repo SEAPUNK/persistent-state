@@ -28,6 +28,7 @@ PersistentState.prototype.get = function (name) {
 
 PersistentState.prototype.set = function (name, value, save) {
   var retval = this._data[name]
+  this._data[name] = value
   if (save) {
     retval = this.save()
   }
