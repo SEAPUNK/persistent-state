@@ -1,6 +1,6 @@
 {
   "name": "persistent-state",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Super simple persistent states with JSON files",
   "main": "index.js",
   "scripts": {
