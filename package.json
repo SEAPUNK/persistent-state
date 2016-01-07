@@ -1,0 +1,29 @@
+{
+  "name": "persistent-state",
+  "version": "1.0.0",
+  "description": "Super simple persistent states with JSON files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/seapunk/persistent-state.git"
+  },
+  "keywords": [
+    "state",
+    "persistent",
+    "json",
+    "file"
+  ],
+  "author": "ivan k <ivan@sq10.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seapunk/persistent-state/issues"
+  },
+  "homepage": "https://github.com/seapunk/persistent-state#readme",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "jsonfile": "^2.2.3"
+  }
+}
