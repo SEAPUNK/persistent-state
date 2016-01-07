@@ -8,22 +8,22 @@ function PersistentState (file) {
   this._data = {}
 }
 
-PersistentState.load = function () {
+PersistentState.prototype.load = function () {
   var self = this
   return readFile(self._file).then(function (json) {
     self._data = json
   })
 }
 
-PersistentState.save = function () {
+PersistentState.prototype.save = function () {
   return writeFile(this._file, this._data)
 }
 
-PersistentState.get = function (name) {
+PersistentState.prototype.get = function (name) {
   return this._data[name]
 }
 
-PersistentState.set = function (name, value, save) {
+PersistentState.prototype.set = function (name, value, save) {
   var retval = this._data[name]
   if (save) {
     retval = this.save()
