@@ -12,6 +12,9 @@ PersistentState.prototype.load = function () {
   var self = this
   return readFile(self._file).then(function (json) {
     self._data = json
+  }).catch(function (err) {
+    if (err.code !== 'ENOENT') throw err
+    self._data = {}
   })
 }
 
