@@ -23,7 +23,7 @@ async function getABC () {
   return state.get('abc')
 }
 
-prepareState.then(() => {
+prepareState().then(() => {
   return getABC()
 }).then((abc) => {
   console.log(abc) // 123
