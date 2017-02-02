@@ -1,5 +1,7 @@
 # persistent-state
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SEAPUNK/persistent-state.svg)](https://greenkeeper.io/)
+
 Super simple persistent states with JSON files.
 
 
